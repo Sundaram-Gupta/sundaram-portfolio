@@ -1,0 +1,540 @@
+/* Generic CSS Properties */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/******* Bars-CSS ******/
+
+.bars-menu {
+    display: none;
+    float: right;
+    position: relative;
+}
+
+.bars i {
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.right-navbar {
+    display: none;
+    position: absolute;
+    right: 1%;
+    margin-right: 0.5rem;
+    margin-top: 4px;
+    background-color: rgb(215, 80, 175);
+    box-shadow: 0px 0px 5px 5px rgb(44, 33, 33);
+    border-radius: 5px;
+}
+
+.right-navbar ul {
+    list-style: none;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.right-navbar ul li a {
+    text-decoration: none;
+    margin: 3px 0px;
+    color: white;
+}
+
+.bars-menu:hover .right-navbar {
+    display: block;
+}
+
+/******* Main-Header ******/
+
+#main-header {
+    height: 77vh;
+    background-image: url(./IMG/resumeHeaderIMG1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+#main-header nav {
+    width: 97.5%;
+    background-color: black;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-menu li a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
+}
+
+.nav-menu li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/******* name-social-container ******/
+#name-social-container {
+    height: 100%;
+    position: relative;
+    top: 50%;
+}
+
+#my-name {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list li {
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+.social-list li:hover {
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.social-list li i {
+    font-size: 1.3rem;
+}
+
+#facebook {
+    color: #3b5998;
+}
+
+#linkedin {
+    color: #0077b5;
+}
+
+#twitter {
+    color: #83c3f3;
+}
+
+#google {
+    color: #dd4b39;
+}
+
+#whatsapp {
+    color: #6ba92f;
+}
+
+#envelope {
+    color: #ed4926;
+}
+
+/************************* Main   *************************/
+
+/* General section-CSS */
+main section {
+    width: 100%;
+    /* min-height: 75vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0px;
+}
+
+
+main section:nth-child(2n) {
+    background-color: rgb(240, 240, 240);
+}
+
+
+.section-title h1 {
+    color: #2857a4;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+/******** About-section ********/
+
+#author-img-container img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-top: -10rem;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+#author-description {
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+#author-description span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#author-description #p-1 {
+    color: #007bff;
+}
+
+#author-description #p-2 {
+    color: #dc3545;
+}
+
+#author-description #p-3 {
+    color: #28a745;
+}
+
+/******** Skills-section ********/
+
+#progress-bar {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(200, 200, 200);
+    border-radius: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    overflow: hidden;
+}
+
+.progress-level {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.level-10 {
+    height: inherit;
+    width: 30%;
+    background-color: #007bff;
+}
+
+.level-20 {
+    height: inherit;
+    width: 90%;
+    background-color: #dc3545;
+}
+
+.level-30 {
+    height: inherit;
+    width: 70%;
+    background-color: #28a745;
+}
+
+.level-40 {
+    height: inherit;
+    width: 50%;
+    background-color: #ffc107;
+}
+
+.level-50 {
+    height: inherit;
+    width: 10%;
+    background-color: #343a40;
+}
+
+.level-60 {
+    height: inherit;
+    width: 10%;
+    background-color: #17a2b8;
+}
+
+
+/********* Work-Experience *********/
+
+.timeline-container {
+    width: 90%;
+    position: relative;
+}
+
+.timeline-container .timeline-box {
+    width: 40%;
+    min-height: 150px;
+    margin: 1rem 1.5rem;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 54%;
+}
+
+/* .timeline-box::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: -13%;
+    z-index: 1;
+    margin: 5px;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -12.5%;
+    z-index: 1;
+} */
+
+.timeline-divider {
+    margin: 0px 1rem;
+    width: 0px;
+    position: absolute;
+    border: 2px dashed #3d79d9;
+    height: 72%;
+    top: 9%;
+    left: 50%;
+}
+
+.timeline-traveller {
+    font-size: 2rem;
+    transform: rotate(90deg);
+    color: #164ba0;
+    position: sticky;
+    top: 15%;
+    z-index: 2;
+}
+
+.timeline-traveller i {
+    position: relative;
+    left: -1rem;
+}
+
+/* timeline-box-content */
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-img-cotainer img {
+    width: 5rem;
+}
+
+.box-header-content h3 {
+    font-size: 1.2rem;
+    color: #2857a4;
+}
+
+.box-header-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: orange;
+}
+
+.box-header-content p:last-child {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.timeline-box>p {
+    font-size: 0.8rem;
+    color: grey;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/********* Education *********/
+
+.education-container {
+    width: 90%;
+    position: relative;
+}
+
+.education-container .timeline-box {
+    width: 40%;
+    min-height: 150px;
+    margin: 1rem 1.5rem;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 54%;
+}
+
+.education-container img {
+    width: 3rem;
+}
+
+#education .timeline-traveller {
+    transform: rotate(0deg);
+}
+
+
+/******** Portfolio-section ********/
+
+.portfolio-img-container {
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portfolio-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-details p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.portfolio-img-container:hover {
+    box-shadow: 0 0 20px #74adc8;
+}
+
+.portfolio-img-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/******** Contact-section ********/
+
+.contact-section {
+    background-image: linear-gradient(to top right, #2857a4, #403066);
+    color: white;
+    margin-bottom: 0px;
+}
+
+.contact-section .section-title h1 {
+    color: white;
+}
+
+.contact-container>div {
+    width: 45%;
+}
+
+/* Contact-form */
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form form input,
+textarea {
+    margin: .5rem 0px;
+    padding: .5rem;
+    width: 75%;
+    border: none;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+#contact-form form textarea {
+    resize: none;
+}
+
+#contact-form form #sub-btn {
+    margin: 1rem 0px;
+    padding: .5rem 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/******* Contact-Detail  ******/
+
+/* get-in-touch */
+
+
+#get-in-touch p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* my-address */
+
+#my-address #address-list {
+    list-style: none;
+}
+
+#my-address #address-list li {
+    margin: 0.5rem 0px;
+}
+
+
+/* social section */
+
+.contact-section #social-icon {
+    margin: 1.5rem 0px;
+}

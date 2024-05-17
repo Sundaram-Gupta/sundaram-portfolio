@@ -1,0 +1,118 @@
+/* Header section */
+@media screen and (max-width: 572px) {
+
+    .bars-menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+    /* main-header */
+    .nav-menu {
+        justify-content: space-evenly;
+        /* display: none; */
+    }
+
+    .social-list li {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .nav-menu li a {
+        font-size: 1rem;
+    }
+
+    #my-name {
+        font-size: 2rem;
+    }
+}
+
+/* About-section */
+
+@media screen and (max-width: 600px) {
+    #about {
+        margin-top: 0px;
+    }
+
+    #author-img-container img {
+        margin-top: -3.5rem;
+    }
+}
+
+/* Work-Experience */
+
+@media screen and (max-width: 600px) {
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .timeline-container .timeline-box {
+        position: static;
+        min-height: 200px;
+        width: 70%;
+    }
+
+    .timeline-divider {
+        margin: 0px 0.5rem;
+        left: 0%;
+    }
+/*     
+    .timeline-box::after {
+        left: 0px;
+    }
+    .timeline-box:nth-child(2n)::after {
+        right: 0px;
+    } */
+}
+
+
+/* Education-section */
+
+@media screen and (max-width: 600px) {
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .education-container .timeline-box {
+        position: static;
+        min-height: 200px;
+        width: 70%;
+    }
+
+    .timeline-divider {
+        margin: 0px 0.5rem;
+        left: 0%;
+    }
+}
+
+
+
+/* Contact-section */
+
+@media screen and (max-width: 470px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container>div {
+        width: 90%;
+    }
+
+    #contact-detail {
+        margin-top: 1rem;
+    }
+
+    #contact-detail>div {
+        text-align: center;
+    }
+}
